@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/圣诞系列分页/assets/img/favicon.webp"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="/圣诞系列分页/assets/css/styles.css" />
+    <link rel="stylesheet" href="/圣诞系列分页/assets/css/swiper-bundle.min.css" />
+    <title>圣诞电影</title>
+  </head>
+  <body>
+    <audio
+      id="bgmusic"
+      src="/圣诞系列分页/assets/img/BGM.mp3"
+      autoplay="autoplay"
+      loop="loop"
+      style="display: block; width: 3%; height: 3%"
+    ></audio>
+    <script type="text/javascript">
+      function toggleSound() {
+        var music = document.getElementById("bgmusic");
+        console.log(music);
+        console.log(music.paused);
+        if (music.paused) {
+          music.paused = false;
+          music.play();
+        }
+      }
+      setInterval("toggleSound()", 1);
+    </script>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">
+          <img src="/圣诞系列分页/assets/img/logo.webp" alt="" class="nav__logo-img" />
+          圣诞系列电影
+        </a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">主页</a>
+            </li>
+            <li class="nav__item">
+              <a href="#celebrate" class="nav__link">电影</a>
+            </li>
+            <li class="nav__item">
+              <a href="#gift" class="nav__link">商品</a>
+            </li>
+            <li class="nav__item">
+              <a href="#new" class="nav__link">关于</a>
+            </li>
+          </ul>
+
+          <div class="nav__close" id="nav-close">
+            <i class="bx bx-x"></i>
+          </div>
+
+          <img src="/圣诞系列分页/assets/img/nav-light.webp" alt="" class="nav__img" />
+        </div>
+        <div class="nav__btns">
+          <i class="bx bx-moon change-theme" id="theme-button"></i>
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="bx bx-grid-alt"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home" id="home">
+        <div class="home__container container grid">
+          <img src="/圣诞系列分页/assets/img/home.webp" alt="" class="home__img" />
+
+          <div class="home__data">
+            <h1 class="home__title">
+              <br />
+              Merry Christmas!
+            </h1>
+            <p class="home__description">
+              暖心治愈电影无论是自己一个人还是与朋友一起看上几
+              部应景的圣诞大片，都依然能过个美好的冬季~
+            </p>
+            <a href="#new" class="button"
+              >更多
+              <script src="https://cdn.lordicon.com/lordicon-1.3.0.js"></script>
+              <lord-icon
+                src="https://cdn.lordicon.com/lznlxwtc.json"
+                trigger="hover"
+                colors="primary:#ffffff"
+                style="width: 20px; height: 20px; top: 5px"
+              >
+              </lord-icon>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== CELEBRATE ====================-->
+      <section class="celebrate section container" id="celebrate">
+        <div class="celebrate__container grid">
+          <div class="celebrate__data">
+            <h2 class="section__title celebrate__title">
+              小鬼当家 Home Alone <br />推荐指数：✰✰✰✰✰
+            </h2>
+            <p class="celebrate__description">
+              讲述的是到了圣诞节 全家外出度假把8岁的凯文留在家里
+              他把家里布置的很有节日气氛感 刚好又碰到了窃贼
+              并且来了一场猫和老鼠游戏 惊喜不断
+            </p>
+            <a href="details.html" class="button">查看详情</a>
+          </div>
+          <img
+            src="assets/img/小鬼当家海报.webp"
+            alt=""
+            class="celebrate__img"
+          />
+        </div>
+      </section>
+
+      <section class="home" id="home">
+        <div class="home__container container grid">
+          <img src="/圣诞系列分页/assets/img/真爱至上海报.webp" alt="" class="home__img" />
+
+          <div class="celebrate__data">
+            <h2 class="section__title celebrate__title">
+              <br />
+              真爱至上 Love Actually <br />推荐指数：✰✰✰✰✰
+            </h2>
+            <p class="celebrate__description">
+              电影由10个温馨感人的爱情故事构成, 或欣喜，或遗憾或悲伤，
+              不同角度诠释着神圣美妙的真爱， 并且满满的圣诞氛围！
+            </p>
+            <a href="details2.html" class="button">查看详情</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="celebrate section container" id="celebrate">
+        <div class="celebrate__container grid">
+          <div class="celebrate__data">
+            <h2 class="section__title celebrate__title">
+              克劳斯:圣诞节的秘密 Klaus <br />推荐指数：✰✰✰✰
+            </h2>
+            <p class="celebrate__description">
+              你想知道圣诞老人是怎么来的吗？被安排到北极圈恶
+              劣之地的贾斯帕，要收满6000封信才能回家，而这时
+              ，他遇到了老头克劳斯...
+            </p>
+            <a href="details3.html" class="button">查看详情</a>
+          </div>
+          <img
+            src="assets/img/克劳斯圣诞节的秘密海报.webp"
+            alt=""
+            class="celebrate__img"
+          />
+        </div>
+      </section>
+
+      <!--==================== NEW ====================-->
+      <section class="new section container" id="gift">
+        <h2 class="section__title">圣诞小物品</h2>
+
+        <div class="new__container">
+          <div class="swiper new-swiper">
+            <div class="swiper-wrapper">
+              <article class="new__card swiper-slide">
+                <div class="new__overlay"></div>
+
+                <img src="assets/img/new1.webp" alt="" class="new__img" />
+                <h3 class="new__price">$95</h3>
+                <span class="new__title">Reindeer</span>
+
+                <button class="button new__button">
+                  <i class="bx bx-heart new__icon"></i>
+                </button>
+              </article>
+
+              <article class="new__card swiper-slide">
+                <div class="new__overlay"></div>
+
+                <img src="assets/img/new2.webp" alt="" class="new__img" />
+                <h3 class="new__price">$20</h3>
+                <span class="new__title">Snow Globe</span>
+
+                <button class="button new__button">
+                  <i class="bx bx-heart new__icon"></i>
+                </button>
+              </article>
+
+              <article class="new__card swiper-slide">
+                <div class="new__overlay"></div>
+
+                <img src="assets/img/new3.webp" alt="" class="new__img" />
+                <h3 class="new__price">$75</h3>
+                <span class="new__title">Sledge</span>
+
+                <button class="button new__button">
+                  <i class="bx bx-heart new__icon"></i>
+                </button>
+              </article>
+
+              <article class="new__card swiper-slide">
+                <div class="new__overlay"></div>
+
+                <img src="assets/img/new4.webp" alt="" class="new__img" />
+                <h3 class="new__price">$15</h3>
+                <span class="new__title">Christmas Wreath</span>
+
+                <button class="button new__button">
+                  <i class="bx bx-heart new__icon"></i>
+                </button>
+              </article>
+            </div>
+
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== MESSAGE ====================-->
+      <section class="message section container" id="new">
+        <div class="message__container grid">
+          <form action="" class="message__form">
+            <h2 class="message__title">意见箱</h2>
+            <input
+              type="text"
+              placeholder="Write your message"
+              class="message__input"
+            />
+            <button class="button message__button">Send Message</button>
+          </form>
+
+          <img src="assets/img/message.webp" alt="" class="message__img" />
+        </div>
+      </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+      <div class="footer__container container grid">
+        <div>
+          <a href="#" class="footer__logo">
+            <img src="assets/img/logo.webp" alt="" class="footer__logo-img" />
+            Christmas
+          </a>
+
+          <p class="footer__description">
+            在这里度过 <br />
+            美好冬日~
+          </p>
+        </div>
+
+        <div>
+          <h3 class="footer__title">编辑人</h3>
+
+          <ul class="footer__links">
+            <li>
+              <a href="" class="footer__link"></a>
+            </li>
+            <li>
+              <a href="#celebrate" class="footer__link">沈睿涵</a>
+            </li>
+            <li>
+              <a href="" class="footer__link"></a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer__title">电影来源</h3>
+          <ul class="footer__links">
+            <li>
+              <p class="footer__link">爱奇艺</p>
+            </li>
+            <li>
+              <p class="footer__link">腾讯视频</p>
+            </li>
+            <li>
+              <p class="footer__link">哔哩哔哩</p>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer__title">支持支付方式</h3>
+
+          <div class="footer__aviables">
+            <img
+              src="assets/img/aviable1.webp"
+              alt=""
+              class="footer__aviable-img"
+            />
+            <img
+              src="assets/img/aviable2.webp"
+              alt=""
+              class="footer__aviable-img"
+            />
+          </div>
+        </div>
+
+        <img src="assets/img/footer1.webp" alt="" class="footer__img1" />
+        <img src="assets/img/footer2.webp" alt="" class="footer__img2" />
+      </div>
+
+      <span class="footer__copy">&#169; www.ntzz.com </span>
+    </footer>
+
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="bx bx-up-arrow-alt scrollup__icon"></i>
+    </a>
+
+    <script src="/圣诞系列分页/assets/js/scrollreveal.min.js"></script>
+    <script src="/圣诞系列分页/assets/js/swiper-bundle.min.js"></script>
+    <script src="/圣诞系列分页/assets/js/main.js"></script>
+  </body>
+</html>
